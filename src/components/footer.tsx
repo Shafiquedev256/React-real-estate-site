@@ -41,6 +41,14 @@ Explore our demo real estate platform, where we prioritize swift performance thr
     </div>
     </div>
     
+    <div className="text-sm flex md:flex-row flex-col justify-evenly border-t-2 border-t-gray-400 py-4">
+<span>About us |</span>
+<span>Help |</span>
+<span>Terms and Conditspan</span>
+<span>Copyright © 2022 Realtyna® Inc.</span>
+
+<span>Last updated on 22 February 2024</span>
+    </div>
     
     </div>
     </>
