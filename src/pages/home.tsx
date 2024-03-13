@@ -1,7 +1,7 @@
 import {Header} from "../components/header" 
 import {Footer} from "../components/footer" 
 import {PopularCities} from "../components/popularCities"
-
+import {Agent} from "../components/agentsCard"
 
 const HomePage = ()=>{
   
@@ -9,7 +9,8 @@ const HomePage = ()=>{
     <>
     <div className="h-max">
     <Header/> 
-    <PopularCities/>
+    <PopularCities/> 
+    <Agent/>
     <Footer/>
     </div>
     </>
