@@ -5,7 +5,7 @@ export const Header = () => {
   const [search, setSearch] = useState("");
   return (
     <>
-      <div className=" bg-[url('/src/assets/pexels-on-shot-3663530.jpg')] bg-center mb-2 bg-cover w-screen h-[30rem] md:h-[50rem] bg-no-repeat overflow-y-hidden">
+      <div className=" bg-[url('/src/assets/pexels-on-shot-3663530.jpg')] bg-center mb-2 bg-cover w-screen h-[30rem] md:h-[40rem] bg-no-repeat overflow-y-hidden">
         <Navbar />
         <div className='w-[100%] h-[100%] bg-black bg-opacity-60 flex justify-center items-center flex-col'>
           <div className='text-white text-center my-4'>

@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <div className='bg-black bg-opacity-60 flex flex-row justify-between text-white items-center font-bold p-3'>
-        <span>Real Estate</span>
+        <span className='font-bold text-2xl'>Real Estate</span>
 
         <div className=' w-2/5'>
           <div
@@ -21,7 +22,9 @@ export const Navbar = () => {
             >
               Close
             </span>
-            <span className='hover:text-gray-400 '>Listings</span>
+            <Link to='/listings' className='hover:text-gray-400 '>
+              Listings
+            </Link>
             <span className='hover:text-gray-400 '>Locations</span>
             <span className='hover:text-gray-400 '>Account</span>
           </div>

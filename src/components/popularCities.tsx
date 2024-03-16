@@ -1,29 +1,49 @@
+import Miamiimg from "/src/assets/Miami.jpeg";
+
+import Miamibeachimg from "/src/assets/miamibeach.jpeg";
+
+import orlandalimg from "/src/assets/Orlando.jpeg";
+
+import tempaimg from "/src/assets/tempa.jpeg";
+
+import Myersimg from "/src/assets/fortmyers.jpeg";
+
+import Laudimg from "/src/assets/FortLauderdale.jpeg";
+
+import saraimg from "/src/assets/sarasota.jpeg";
+
+import peteimg from "/src/assets/Petersburg.jpeg";
+import { Link } from "react-router-dom";
+
 type Props = {
   city: string;
   src: string;
 };
 
 const demoCities: Props[] = [
-  { city: "Miami", src: "/src/assets/Miami.jpeg" },
-  { city: "Miami Beach", src: "/src/assets/miamibeach.jpeg" },
-  { city: "Orlando", src: "/src/assets/Orlando.jpeg" },
-  { city: "Tempa", src: "/src/assets/tempa.jpeg" },
-  { city: "Fort Myers", src: "/src/assets/fortmyers.jpeg" },
-  { city: "Fort Lauderdale", src: "/src/assets/FortLauderdale.jpeg" },
-  { city: "Sarasota", src: "/src/assets/sarasota.jpeg" },
-  { city: "St Petersburg", src: "/src/assets/Petersburg.jpeg" },
+  { city: "Miami", src: Miamiimg },
+  { city: "Miami Beach", src: Miamibeachimg },
+  { city: "Orlando", src: orlandalimg },
+  { city: "Tempa", src: tempaimg },
+  { city: "Fort Myers", src: Myersimg },
+  { city: "Fort Lauderdale", src: Laudimg },
+  { city: "Sarasota", src: saraimg },
+  { city: "St Petersburg", src: peteimg },
 ];
 
 const CityCard = ({ city, src }: Props) => {
   return (
     <>
-      <div className='rounded-2xl relative w-32 h-28 md:w-56 md:h-44 m-2'>
+      <Link
+        to={`city/${city}`}
+        className='rounded-2xl relative w-32 h-28 md:w-56 md:h-44 m-2'
+      >
         <img src={src} className='w-[100%] h-[100%] absolute rounded-2xl' />
         <div className='absolute w-[100%] h-[100%] flex items-center justify-center text-white z-10 bg-black bg-opacity-25 rounded-2xl hover:bg-blue-500 hover:bg-opacity-50'>
           {" "}
           <span>{city}</span>
         </div>
-      </div>
+      </Link>
     </>
   );
 };
