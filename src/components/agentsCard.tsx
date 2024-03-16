@@ -1,3 +1,5 @@
+import agentImg from "/src/assets/Michele.png";
+
 type Agents = {
   img: string;
   name: string;
@@ -6,10 +8,10 @@ type Agents = {
 
 export const Agent = () => {
   const agents: Agents = [
-    { img: "/src/assets/Michele.png", name: "", summary: "" },
-    { img: "/src/assets/Michele.png", name: "", summary: "" },
-    { img: "/src/assets/Michele.png", name: "", summary: "" },
-    { img: "/src/assets/Michele.png", name: "", summary: "" },
+    { img: agentImg, name: "", summary: "" },
+    { img: agentImg, name: "", summary: "" },
+    { img: agentImg, name: "", summary: "" },
+    { img: agentImg, name: "", summary: "" },
   ];
   return (
     <div className='my-3'>
