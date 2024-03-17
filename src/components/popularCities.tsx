@@ -53,7 +53,7 @@ export const PopularCities = () => {
     <>
       <div className='font-bold m-3 '>Available cities</div>
       <div className='md:flex md:items-center md:justify-center'>
-        <div className='grid grid-cols-2 justify-items-center md:grid-cols-3 items-center md:w-[70%]'>
+        <div className='grid grid-cols-2 justify-items-center md:grid-cols-3 items-center md:w-[90%]'>
           {demoCities.map((item) => {
             return <CityCard city={item.city} src={item.src} />;
           })}
