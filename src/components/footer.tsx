@@ -1,3 +1,5 @@
+import emailicone from "../assets/mail-alt-3-svgrepo-com.svg";
+import callIcone from "../assets/phone-svgrepo-com.svg";
 export const Footer = () => {
   return (
     <>
@@ -41,11 +43,11 @@ export const Footer = () => {
 
         <div className='m-4 flex flex-col md:flex-row justify-between items-center md:w-[60%]'>
           <div className='flex flex-row items-center space-x-1 '>
-            <img src='/src/assets/phone-svgrepo-com.svg' />
+            <img src={callIcone} />
             <span>+256 760807822</span>
           </div>
           <div className='flex flex-row items-center space-x-1 '>
-            <img src='/src/assets/mail-alt-3-svgrepo-com.svg' />
+            <img src={emailicone} />
             <span>shafiquedev256@gmail.com</span>
           </div>
         </div>

@@ -20,7 +20,7 @@ export const Agent = () => {
       <div className='flex justify-center items-center'>
         <div className='flex flex-col md:w-[70%] justify-center items-center md:grid md:grid-cols-2'>
           {agents.map((item) => (
-            <div className='w-60 md:w-64 shadow-xl rounded m-2 p-2 flex flex-col justify-between items-center text-center hover:bg-blue-600 hover:text-white'>
+            <div className='w-60 md:w-64 shadow-md rounded m-2 p-2 flex flex-col justify-between items-center text-center hover:bg-blue-600 hover:text-white'>
               <img src={item.img} className='' />
               <div>
                 <h1 className='font-bold text-blue-600 text-3xl'>

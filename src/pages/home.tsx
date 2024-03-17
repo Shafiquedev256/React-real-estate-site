@@ -8,7 +8,9 @@ const HomePage = () => {
     <>
       <div className='h-max'>
         <Header />
-        <Recentlistings />
+        <div className='my-3'>
+          <Recentlistings />
+        </div>
         <PopularCities />
         <Agent />
         <Footer />
