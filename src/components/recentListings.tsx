@@ -1,13 +1,21 @@
+import { Link, useNavigate } from "react-router-dom";
 import { useListings } from "../hooks/listings";
 
 export const Recentlistings = () => {
-  const { list } = useListings();
+  const navigate = useNavigate();
+  const { recent } = useListings();
   return (
-    <>
-      <div className='flex flex-col justify-center items-center md:grid md:grid-cols-3 md:justify-items-center'>
-        {list.map((item) => {
+    <div className='py-4'>
+      <div></div>
+      <div className='flex flex-col my-4 justify-center items-center md:grid md:grid-cols-3 md:justify-items-center'>
+        {recent.map((item) => {
           return (
-            <div className='W-fit roundeds m-3 md:m-3 '>
+            <div
+              className='W-fit roundeds m-3 md:m-3 relative'
+              onClick={() => {
+                navigate(`/selected/${item.location}`);
+              }}
+            >
               <div className='text-xs z-10 font-bold text-green-600 bg-green-100 absolute rounded text-center  top-0 m-1 left-0 w-fit p-1'>
                 Available
               </div>
@@ -37,6 +45,12 @@ export const Recentlistings = () => {
           );
         })}
       </div>
-    </>
+      <Link
+        to={"/listings"}
+        className='bg-blue-600  m-4 text-white font-bold w-fit p-3 rounded-l-full rounded-r-full '
+      >
+        see more
+      </Link>
+    </div>
   );
 };

@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import menuicone from "../assets/menu-svgrepo-com.svg";
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className='bg-black bg-opacity-60 flex flex-row justify-between text-white items-center font-bold p-3'>
+      <div className='bg-black bg-opacity-60 flex flex-row justify-between text-white items-center font-bold p-3 w-[100%]'>
         <span className='font-bold text-2xl'>Real Estate</span>
 
         <div className=' w-2/5'>
@@ -32,7 +32,7 @@ export const Navbar = () => {
 
         <div className='md:hidden'>
           <img
-            src='/src/assets/menu-svgrepo-com.svg'
+            src={menuicone}
             onClick={() => {
               setIsOpen(true);
             }}
