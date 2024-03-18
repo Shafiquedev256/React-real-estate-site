@@ -59,5 +59,11 @@ const list: List = [
 ];
 
 export const useListings = () => {
-  return { list };
+  const recent = list.map((item, index: number) => {
+    if (index == 4) {
+      return list[index];
+    }
+    return item;
+  });
+  return { list, recent };
 };
