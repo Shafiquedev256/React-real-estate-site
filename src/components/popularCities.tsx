@@ -36,10 +36,10 @@ const CityCard = ({ city, src }: Props) => {
     <>
       <Link
         to={`city/${city}`}
-        className='rounded-2xl relative w-32 h-28 md:w-56 md:h-44 m-2'
+        className='rounded-2xl relative w-[200px] h-[200px] md:w-[250px] md:h-[230px] m-2'
       >
         <img src={src} className='w-[100%] h-[100%] absolute rounded-2xl' />
-        <div className='absolute w-[100%] h-[100%] flex items-center justify-center text-white z-10 bg-black bg-opacity-25 rounded-2xl hover:bg-blue-500 hover:bg-opacity-50'>
+        <div className='absolute w-[100%] h-[100%] flex items-center justify-center text-white z-10 bg-black bg-opacity-25 rounded-2xl hover:bg-blue-500 hover:bg-opacity-50 hover:font-bol'>
           {" "}
           <span>{city}</span>
         </div>
