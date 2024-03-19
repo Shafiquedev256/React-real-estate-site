@@ -11,7 +11,10 @@ const App = () => {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/city/:city' element={<Cities_page />} />
-          <Route path='/selected/:house' element={<Selected_house_page />} />
+          <Route
+            path='/selected/:house/:id'
+            element={<Selected_house_page />}
+          />
           <Route path='/listings' element={<Listins_page />} />
         </Routes>
       </BrowserRouter>

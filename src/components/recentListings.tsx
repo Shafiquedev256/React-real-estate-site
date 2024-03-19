@@ -13,7 +13,7 @@ export const Recentlistings = () => {
             <div
               className='W-fit roundeds m-3 md:m-3 relative'
               onClick={() => {
-                navigate(`/selected/${item.location}`);
+                navigate(`/selected/${item.location}/${item.id}`);
               }}
             >
               <div className='text-xs z-10 font-bold text-green-600 bg-green-100 absolute rounded text-center  top-0 m-1 left-0 w-fit p-1'>
@@ -26,7 +26,7 @@ export const Recentlistings = () => {
                 />
               </div>
               <div className='bg-white  shadow-md md:w-[400px] space-y-2  p-4  w-[300px] rounded-b'>
-                <div className='text-blue-600 text-3xl '>$20000</div>
+                <div className='text-blue-600 text-3xl '>${item.price}</div>
                 <div className='text-2xl '>{item.location}</div>
                 <div className='text-gray-400 text-sm '>demmo real estates</div>
                 <div className='flex flex-row justify-between items-center'>
