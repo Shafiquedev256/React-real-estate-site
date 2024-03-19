@@ -11,6 +11,8 @@ type List = {
   bdr: number;
   size: string;
   bathr: number;
+  price: number;
+  id: number;
 }[];
 
 const list: List = [
@@ -20,6 +22,8 @@ const list: List = [
     bdr: 2,
     size: "123sqft",
     bathr: 2,
+    price: 1000000,
+    id: 1,
   },
   {
     location: "D467 DEWAY DR",
@@ -27,6 +31,8 @@ const list: List = [
     bdr: 2,
     size: "123sqft",
     bathr: 2,
+    price: 1100000,
+    id: 2,
   },
   {
     location: "D467 DEWAY DR",
@@ -34,6 +40,8 @@ const list: List = [
     bdr: 2,
     size: "123sqft",
     bathr: 2,
+    price: 900000,
+    id: 3,
   },
   {
     location: "D467 DEWAY DR",
@@ -41,6 +49,8 @@ const list: List = [
     bdr: 2,
     size: "123sqft",
     bathr: 2,
+    price: 560000,
+    id: 4,
   },
   {
     location: "D467 DEWAY DR",
@@ -48,6 +58,8 @@ const list: List = [
     bdr: 2,
     size: "123sqft",
     bathr: 2,
+    price: 1567400,
+    id: 5,
   },
   {
     location: "D467 DEWAY DR",
@@ -55,6 +67,8 @@ const list: List = [
     bdr: 2,
     size: "123sqft",
     bathr: 2,
+    price: 80000,
+    id: 6,
   },
 ];
 

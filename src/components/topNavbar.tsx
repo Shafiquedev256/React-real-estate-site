@@ -5,7 +5,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className='bg-black bg-opacity-60 flex flex-row justify-between text-white items-center font-bold p-3 w-[100%]'>
+      <div className=' flex flex-row justify-between text-white items-center font-bold p-3 w-[100%]'>
         <span className='font-bold text-2xl'>Real Estate</span>
 
         <div className=' w-2/5'>

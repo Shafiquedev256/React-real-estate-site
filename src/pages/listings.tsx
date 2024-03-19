@@ -7,7 +7,9 @@ const Listins_page = () => {
   return (
     <>
       <div className='bg-gray-100 bg-opacity-50 py-4 px-2 space-y-3'>
-        <Navbar />
+        <div className='bg-black'>
+          <Navbar />
+        </div>
         <div className='bg-white w-[90%] md:w-[50%] flex flex-row p-1 justify-between  items-center rounded'>
           <SearchBar />
         </div>
