@@ -36,7 +36,7 @@ const CityCard = ({ city, src, height }: Props) => {
   return (
     <>
       <div
-        className={`rounded-2xl relative ${height} w-[120px] font-bold h-auto md:w-[250px]  m-2`}
+        className={`rounded-2xl relative ${height} w-[120px] font-bold md:w-[250px]  m-2`}
       >
         <Link to={`city/${city}`} className=''>
           <img src={src} className='w-[100%]  absolute rounded-2xl h-[100%]' />
@@ -55,7 +55,7 @@ export const PopularCities = () => {
     <>
       <div className='font-bold m-3 '>Available cities</div>
       <div className='flex items-center justify-center'>
-        <div className='flex  flex-row  md:flex-row h-[20rem] w-fit md:h-[35rem] overflow-hidden '>
+        <div className='flex  flex-row h-[20rem]  md:h-[35rem] overflow-hidden '>
           <div className='flex flex-col space-y-2'>
             <CityCard
               city={demoCities[0].city}
