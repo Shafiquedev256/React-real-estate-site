@@ -5,6 +5,7 @@ import { House_highlights } from "../components/houseHighlights";
 import { Post_auth } from "../components/postAuth";
 import { About_house } from "../components/aboutHouse";
 import { House_location } from "../components/houseLocation";
+import { HouseImages } from "../components/houseImages";
 
 const Selected_house_page = () => {
   const { house, id } = useParams();
@@ -16,6 +17,8 @@ const Selected_house_page = () => {
         </div>
         <div className='bg-gray-100 bg-opacity-75 p-3'>{`Home/listings/${house}/${id}`}</div>
       </div>
+
+      <HouseImages />
 
       <div className='containor px-3 space-y-3'>
         <div className='text-2xl md:text-3xl space-y-4 py-10  '>
