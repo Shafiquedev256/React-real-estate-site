@@ -24,10 +24,10 @@ export const Post_auth = () => {
             </div>
           </div>
           <div className='flex flex-row space-x-2'>
-            <img src={phoneIcone} /> <span>+256 760807822</span>
+            <img src={phoneIcone} /> <span>+256 000303839</span>
           </div>
           <div className='flex flex-row space-x-2'>
-            <img src={mailIcone} /> <span>musinguzidev@gmail.com</span>
+            <img src={mailIcone} /> <span>examplev@example.com</span>
           </div>
         </div>
 
