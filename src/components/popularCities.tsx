@@ -38,7 +38,7 @@ const CityCard = ({ city, src, height }: Props) => {
       <div
         className={`rounded-2xl relative ${height} w-[120px] font-bold md:w-[250px]  m-2`}
       >
-        <Link to={`city/${city}`} className=''>
+        <Link to={`/`} className=''>
           <img src={src} className='w-[100%]  absolute rounded-2xl h-[100%]' />
           <div className='absolute w-[100%] h-[100%] flex items-center justify-center text-white z-10 bg-black bg-opacity-25 rounded-2xl hover:bg-blue-500 hover:bg-opacity-50 hover:font-bol'>
             {" "}
@@ -55,7 +55,7 @@ export const PopularCities = () => {
     <>
       <div className='font-bold m-3 '>Available cities</div>
       <div className='flex items-center justify-center'>
-        <div className='flex  flex-row h-[20rem]  md:h-[35rem] overflow-hidden '>
+        <div className='flex  flex-row h-[20rem]  md:h-[35rem] overflow-scroll md:overflow-hidden '>
           <div className='flex flex-col space-y-2'>
             <CityCard
               city={demoCities[0].city}

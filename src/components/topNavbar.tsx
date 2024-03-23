@@ -6,7 +6,9 @@ export const Navbar = () => {
   return (
     <>
       <div className=' flex flex-row justify-between text-white items-center font-bold p-3 w-[100%]'>
-        <span className='font-bold text-2xl'>Real Estate</span>
+        <Link to='/' className='font-bold text-2xl'>
+          Real Estate
+        </Link>
 
         <div className=' w-2/5'>
           <div
