@@ -44,11 +44,11 @@ export const Footer = () => {
         <div className='m-4 flex flex-col md:flex-row justify-between items-center md:w-[60%]'>
           <div className='flex flex-row items-center space-x-1 '>
             <img src={callIcone} />
-            <span>+256 760807822</span>
+            <span>+123 4567890</span>
           </div>
           <div className='flex flex-row items-center space-x-1 '>
             <img src={emailicone} />
-            <span>shafiquedev256@gmail.com</span>
+            <span>example@gmail.com</span>
           </div>
         </div>
 

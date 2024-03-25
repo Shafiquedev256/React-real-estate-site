@@ -13,7 +13,7 @@ export const Recentlistings = () => {
             <div
               className='W-fit roundeds m-3 md:m-3 relative'
               onClick={() => {
-                navigate(`/selected/${item.location}/${item.id}`);
+                navigate(`/selected/${item.title}/${item.id}`);
               }}
             >
               <div className='text-xs z-10 font-bold text-green-600 bg-green-100 absolute rounded text-center  top-0 m-1 left-0 w-fit p-1'>
