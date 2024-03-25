@@ -11,63 +11,70 @@ type List = {
   bdr: number;
   size: string;
   bathr: number;
-  price: number;
+  price: string;
   id: number;
+  title: string;
 }[];
 
 const list: List = [
   {
-    location: "D467 DEWAY DR",
+    location: "1660 GULF BLVD #708, CLEARWATER",
+    title: "1660 GULF BLVD",
     img: houseim1,
     bdr: 2,
     size: "123sqft",
     bathr: 2,
-    price: 1000000,
+    price: "1,150,000",
     id: 1,
   },
   {
-    location: "D467 DEWAY DR",
+    location: "2400 WINDING CREEK BLVD #14-204,",
+    title: "2400 WINDING CREEK",
     img: houseim2,
     bdr: 2,
     size: "123sqft",
     bathr: 2,
-    price: 1100000,
+    price: "229,900",
     id: 2,
   },
   {
-    location: "D467 DEWAY DR",
+    location: "3256 BRAEMAR TER, PALM HARBOR,",
+    title: "3256 BRAEMAR TER",
     img: houseim3,
     bdr: 2,
     size: "123sqft",
     bathr: 2,
-    price: 900000,
+    price: "459,900",
     id: 3,
   },
   {
-    location: "D467 DEWAY DR",
+    location: "2232 PICKARD LN, NORTH PORT,",
+    title: "2232 PICKARD",
     img: houseim4,
     bdr: 2,
     size: "123sqft",
     bathr: 2,
-    price: 560000,
+    price: "415,000",
     id: 4,
   },
   {
-    location: "D467 DEWAY DR",
+    location: "6909 N BOULEVARD, TAMPA, Florida",
+    title: "6909 N BOULEVARD",
     img: houseim5,
     bdr: 2,
     size: "123sqft",
     bathr: 2,
-    price: 1567400,
+    price: "525,000",
     id: 5,
   },
   {
-    location: "D467 DEWAY DR",
+    location: "5295 BRAHMA AVE, ORLANDO, Florida",
+    title: "5295 BRAHMA AVE",
     img: houseim6,
     bdr: 2,
     size: "123sqft",
     bathr: 2,
-    price: 80000,
+    price: "285,000",
     id: 6,
   },
 ];
